@@ -325,7 +325,10 @@ SkipList<K, V>::~SkipList() {
     delete header_;
 }
 
-
+template<typename K, typename V> 
+int SkipList<K, V>::get_size() { 
+    return element_count_;
+}
 
 
 
